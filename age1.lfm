@@ -1,0 +1,63 @@
+object Form1: TForm1
+  Left = 531
+  Height = 192
+  Top = 272
+  Width = 441
+  Caption = 'Fountain of Youth Program...'
+  ClientHeight = 192
+  ClientWidth = 441
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'System'
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object Label1: TLabel
+    Left = 46
+    Height = 16
+    Top = 40
+    Width = 336
+    Caption = 'Scroll the Bar to pick your age. Then click the button'
+    ParentColor = False
+  end
+  object AgeLabel: TLabel
+    Left = 160
+    Height = 1
+    Top = 104
+    Width = 1
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 16
+    Top = 96
+    Width = 8
+    Caption = '0'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 344
+    Height = 16
+    Top = 96
+    Width = 24
+    Caption = '100'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 149
+    Height = 33
+    Top = 128
+    Width = 129
+    Caption = 'Test My Age'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object ScrollBar1: TScrollBar
+    Left = 56
+    Height = 17
+    Top = 72
+    Width = 313
+    PageSize = 0
+    TabOrder = 1
+    OnChange = ScrollBar1Change
+  end
+end
